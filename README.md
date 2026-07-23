@@ -59,13 +59,21 @@ A pull-up resistor should be connected between the DHT22 DATA line and 3.3V.
 
 ### circuit diagram  
 
-<img width="907" height="492" alt="image" src="https://github.com/user-attachments/assets/37043b42-bbdf-4dcb-9776-6fafc91575c8" />
+<img width="846" height="477" alt="image" src="https://github.com/user-attachments/assets/c1727d8c-b8b5-4715-8803-dad8838f1260" />
 
 
 ### result
-<img width="862" height="485" alt="image" src="https://github.com/user-attachments/assets/5c78c3ef-6936-4726-b1ca-1af3647ccd21" />
 
-<img width="433" height="406" alt="image" src="https://github.com/user-attachments/assets/6f698881-6321-4fd5-a5b2-5e9fd152daa1" />
+### initial stage 
+<img width="857" height="497" alt="image" src="https://github.com/user-attachments/assets/410ee421-1a4e-465f-a28a-0e7e5592e654" />
+
+###  system wakes up after presseing the push button
+<img width="842" height="502" alt="image" src="https://github.com/user-attachments/assets/c56d8478-3000-4a79-8d5c-0d6028ab62e6" />
+
+### goes to sleep(enters low power mode ) 
+<img width="875" height="482" alt="image" src="https://github.com/user-attachments/assets/d8c1ddd0-540a-448b-9552-49493f069d1a" />
+
+
 
 
 
