@@ -26,6 +26,15 @@
       "top": 303.8,
       "left": 441.6,
       "attrs": { "color": "green", "xray": "1" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 250, "left": 520, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 250,
+      "left": 460,
+      "rotate": 90,
+      "attrs": { "value": "220" }
     }
   ],
   "connections": [
@@ -41,7 +50,10 @@
     [ "lcd1:SDA", "nucleo:PB7", "blue", [] ],
     [ "lcd1:SCL", "nucleo:PB6", "purple", [] ],
     [ "btn1:1.l", "nucleo:PB0.1", "green", [] ],
-    [ "btn1:2.l", "nucleo:GND.3", "black", [] ]
+    [ "btn1:2.l", "nucleo:GND.3", "black", [] ],
+    [ "nucleo:PA5", "r2:1", "green", [] ],
+    [ "r2:2", "led1:A", "green", [] ],
+    [ "led1:C", "nucleo:GND.4", "black", [] ]
   ],
   "dependencies": {}
 }
