@@ -65,6 +65,9 @@ A pull-up resistor should be connected between the DHT22 DATA line and 3.3V.
 ### result
 <img width="862" height="485" alt="image" src="https://github.com/user-attachments/assets/5c78c3ef-6936-4726-b1ca-1af3647ccd21" />
 
+<img width="433" height="406" alt="image" src="https://github.com/user-attachments/assets/6f698881-6321-4fd5-a5b2-5e9fd152daa1" />
+
+
 
 
 
