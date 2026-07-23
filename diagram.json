@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "author": "Himanshu Pawar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-st-nucleo-c031c6", "id": "nucleo", "top": 10.43, "left": 27.82, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -86.1, "left": -159, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 44.8,
+      "left": 351.2,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -24,
+      "left": -86.95,
+      "rotate": 90,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 303.8,
+      "left": 441.6,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "$serialMonitor:TX", "nucleo:PA3", "", [] ],
+    [ "$serialMonitor:RX", "nucleo:PA2", "", [] ],
+    [ "dht1:VCC", "nucleo:3V3.1", "red", [] ],
+    [ "dht1:GND", "nucleo:GND.1", "black", [] ],
+    [ "dht1:SDA", "nucleo:PA1", "green", [] ],
+    [ "r1:1", "nucleo:3V3.2", "red", [] ],
+    [ "r1:2", "dht1:SDA", "yellow", [] ],
+    [ "lcd1:VCC", "nucleo:5V.1", "red", [] ],
+    [ "lcd1:GND", "nucleo:GND.2", "black", [] ],
+    [ "lcd1:SDA", "nucleo:PB7", "blue", [] ],
+    [ "lcd1:SCL", "nucleo:PB6", "purple", [] ],
+    [ "btn1:1.l", "nucleo:PB0.1", "green", [] ],
+    [ "btn1:2.l", "nucleo:GND.3", "black", [] ]
+  ],
+  "dependencies": {}
+}
